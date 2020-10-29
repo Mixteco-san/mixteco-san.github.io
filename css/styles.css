@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+/* ////////////////////////  CONTAINER  ////////////////////////*/
+
 .Container
 {
     width: 75%;
@@ -12,6 +14,13 @@
     right: 0;
 }
 
+.Hero
+{
+    background-color: #30336b;
+}
+
+/*  /////////////////////  SIDEBAR  //////////////////////////*/
+
 .sidebar
 {
     width: 25%;
@@ -20,10 +29,7 @@
     position: fixed;
 }
 
-.Hero
-{
-    background-color: #30336b;
-}
+/*  /////////////////////  FOOTER  //////////////////////////*/
 
 .piePag
 {
