@@ -3,6 +3,18 @@
     margin: 0;
 }
 
+/*  /////////////////// Formatos /////////////////////   */
+
+h1
+{
+    font-size: 40px;
+}
+
+h2
+{
+    font-size: 30px;
+}
+
 /* ////////////////////////  CONTAINER  ////////////////////////*/
 
 .Container
@@ -27,6 +39,72 @@
     height: 100%;
     background-color: #130f40;
     position: fixed;
+    text-align: center;
+}
+
+.navbar__contIMG
+{
+    margin: 40px 0;
+}
+
+.IMG__Javi
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.sidebar h2
+{
+    color: #6ab04c;
+    margin-bottom: 30px;
+}
+
+.RSocial__link
+{
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    background-size: 45px 45px;
+    margin: 0 7px;
+}
+
+.RSocial__link.twitter
+{
+    background-image: url(../images/twitter.svg);
+}
+
+.RSocial__link.github
+{
+    background-image: url(../images/github.svg);
+}
+
+.RSocial__link.instagram
+{
+    background-image: url(../images/instagram.svg);
+}
+
+.sidebar__menu
+{
+    margin-top: 30px;
+}
+
+.sidebar ul
+{
+    list-style: none;
+}
+
+.menu__op li
+{
+    margin-top: 15px;
+}
+
+.sidebar a{
+    color: #e056fd;
+    text-decoration: none;
+    font-size: 25px;
 }
 
 /*  /////////////////////  FOOTER  //////////////////////////*/
