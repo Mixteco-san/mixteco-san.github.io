@@ -1,84 +1,180 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="fontawesome/css/all.css">
 
+    <link rel="stylesheet" href="css/styles.css">
+    
     <title>Javier Silva Avendaño</title>
 </head>
 <body>
-
-
-    <!-- ////////////////    Container  ////////////////// -->
-    <div class="Container">
-        <header class="Bienvenida">
-            <h1>Bienvenido</h1>
-        </header>
-
-        <!-- HERO -->
-
-        <section class="Hero" id="Javi">
-            <h2>Javier Silva Avendaño</h2>
-            <h5>Mixteco-San</h5>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A at blanditiis eum aliquam odit iusto obcaecati quas labore, est quam veniam mollitia. Molestiae, sunt quod! Sequi, quas. Voluptatum, voluptatem tenetur.
-            </p>
-        </section>
-
-        <!-- HABILIDADES -->
-
-        <section class="Habilidades" id="Hability"> 
-            <h2>Habilidades</h2>
-        </section>
-
-        <!-- PROYECTS -->
-
-        <section class="Proyects" id="Proy">
-            <h2>Proyectos</h2>
-        </section>
-
-        <section></section>
-    </div>
-
-    <!-- ////////////////   SIDEBAR   //////////////////// -->
-    <section class="sidebar">
-        <figure class="navbar__contIMG">
-            <img  class="IMG__Javi" src="images/javi2.jpg"">
-        </figure>
+    <!-- Inicio -->
+    <header>
+        <nav>
+            <div class="header__logo">
+                <p>J</p>
+                <p>S</p>
+                <p>A</p>
+            </div>
+            
+            <div class="header__menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
         
-        <h2>Javier Silva Avendaño</h2>
-        
-        <div class="RSocial">
-            <a href="https://twitter.com/MixtecoSan" class="RSocial__link twitter" target="_blank"></a>
-            <a href="https://github.com/Mixteco-san" class="RSocial__link github" target="_blank"></a>
-            <a href="https://www.instagram.com/mixteco_san/" class="RSocial__link instagram" target="_blank"></a>
+        <div class="header__img">
+            <img src="images/teclado.jpg" alt="home">
         </div>
 
-        <div class="sidebar__menu">
-            <ul class="menu__op">
-                <li>
-                    <a href="#Javi">Sobre mi</a>
-                </li>
+        <div class="header__icons">
+            <div class="h__icon">
+                <a href="#skills">
+                    <i class="fas fa-hand-sparkles"></i>
+                </a>
+            </div>
 
-                <li>
-                    <a href="#Hability">Habilidades</a>
-                </li>
+            <div class="h__icon">
+                <a href="#work">
+                    <i class="fas fa-briefcase"></i>
+                </a>
+            </div>
+            
+            <div class="h__icon">
+                <a href="#about">
+                    <i class="far fa-user"></i>
+                </a>
+            </div>
+        </div>
 
-                <li>
-                    <a href="#Proy">Proyectos</a>
-                </li>
+        <div class="header__txt">
+            <h1>
+                DESARROLLADOR WEB FULL STACK
+            </h1>
+
+            <p>
+                Diseño, creo, actualizo y mantengo páginas web, mi especialidad es el front-end UX/UI.
+            </p>
+        </div>
+    </header>
+
+    <section class="skills" id="skills">
+        <h1>
+            SKILLS
+        </h1>
+
+        <p>
+            <b>¡Sin miedo al éxito!</b>
+            <br>
+            Siempre creciendo y aprendiendo, todo lo que tu empresa o equipo de trabajo necesita para alcanzar sus objetivos, lo encuentras aquí.
+        </p>
+
+        <div class="skiils__contents">
+            <h3>
+                Para la web
+            </h3>
+    
+            <div class="skills__icons">
+                <div class="skill--icon i--html">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+    
+                <div class="skill--icon i--css">
+                    <i class="fab fa-css3-alt i--css"></i>
+                    <P>CSS3</P>
+                </div>
+    
+                <div class="skill--icon i--js">
+                    <i class="fab fa-js"></i>
+                    <P>JavaScript</P>
+                </div>
+    
+                <div class="skill--icon i--py">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+            </div>
+
+            <h3>
+                Frameworks
+            </h3>
+    
+            <div class="skills__icons">
+                <div class="skill--icon i--boots">
+                    <i class="fab fa-bootstrap"></i>
+                    <p>Bootsrap</p>
+                </div>
+    
+                <div class="skill--icon i--vue">
+                    <i class="fab fa-vuejs"></i>
+                    <P>Vue.js</P>
+                </div>
+    
+                <div class="skill--icon i--twcss">
+                    <P>Tailwind CSS</P>
+                </div>
+            </div>
+
+            <h3>
+                Herramientas
+            </h3>
+    
+            <div class="skills__icons">
+                <div class="skill--icon i--node">
+                    <i class="fab fa-node"></i>
+                    <p>Node.js</p>
+                </div>
+    
+                <div class="skill--icon i--dkr">
+                    <i class="fab fa-docker"></i>
+                    <P>Docker</P>
+                </div>
+    
+                <div class="skill--icon i--git">
+                    <i class="fab fa-git-alt"></i>
+                    <P>Git</P>
+                </div>
+            </div>
+
+            <div class="skills_softs">
+                <h3>
+                    Habilidades blandas
+                </h3>
+
+                <ul class="soft__skills--list">
+                    <li>Comunicación efectiva.</li>
+                    <li>Gestión efectiva del tiempo.</li>
+                    <li>Productividad.</li>
+                    <li>Gestión de conflictos.</li>
+                    <li>Dinámicas de trabajo en equipo.</li>
+                    <li>Atención al cliente.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="work__content">
+            <img src="images/dispositivos.jpg" alt="">
+            <h1>MI TRABAJO</h1>
+        </div>
+
+        <div class="work__txt">
+            <ul>
+                <li>Una web responsiva, apta para todos los dispositivos.</li>
+                <li>Pasión y amor por el diseño.</li>
+                <li>Interfaz accesible.</li>
+                <li>Un sitio limpio y agradable.</li>
             </ul>
         </div>
     </section>
-    
-
-    <!--  /////////////   FOOTER   ////////////////////  -->
-
-    <footer class="piePag">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quasi inventore odit cupiditate minima tenetur quos neque, qui</p>
-    </footer>
-
-    <!---->
 </body>
 </html>
