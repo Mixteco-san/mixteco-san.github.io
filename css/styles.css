@@ -8,6 +8,7 @@
     --font-normal: 16px;
     --font-minim: 10px;
     --black: black;
+    --gray: #F5F5F5
 }
 
 /* //////////        ICONS COLORS          ////////////// */
@@ -72,14 +73,14 @@ a {
 
 header {
     height: var(--mobile-H);
-    width: var(--mobile-W);
+    max-width: var(--mobile-W);
     display: flex;
     overflow: hidden;
     box-sizing: border-box;
 }
 
 nav {
-    width: var(--mobile-W);
+    max-width: var(--mobile-W);
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -116,7 +117,7 @@ header .header__img img {
 
 header .header__txt {
     position: absolute;
-    width: var(--mobile-W);
+    max-width: var(--mobile-W);
     text-align: center;
     color: var(--white);
     top: 300px;
@@ -125,7 +126,7 @@ header .header__txt {
 }
 
 header .header__icons {
-    width: 320px;
+    max-width: var(--mobile-H);
     color: var(--white);
     position: absolute;
     display: flex;
@@ -150,7 +151,7 @@ header .header__txt p {
 /* //////////        SKILLS         ////////////// */
 
 .skills {
-    width: var(--mobile-W);
+    max-width: var(--mobile-W);
     text-align: center;
     box-sizing: border-box;
 }
@@ -217,7 +218,7 @@ header .header__txt p {
 /* //////////        WORK         ////////////// */
 
 .work__content {
-    width: 320px;
+    max-width: var(--mobile-W);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -237,10 +238,52 @@ header .header__txt p {
 }
 
 .work__txt {
-    width: var(--mobile-W);
+    max-width: var(--mobile-W);
 }
 
 .work__txt ul li {
     font-size: var(--font-normal);
     font-family: var(--prompt);
+}
+
+.work__proyect {
+    box-sizing: border-box;
+    max-width: var(--mobile-W);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.proyect--title {
+    background: var(--black);
+    font-size: var(--font-normal);
+}
+
+.proyect--title h3 {
+    color: var(--white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.proyect--img {
+    max-width: var(--mobile-H);
+}
+
+.proyect--img img {
+    width: 100%;
+}
+
+.proyect--detail--text {
+    margin: 15px;
+    text-align: justify;
+    font-size: var(--font-normal);
+}
+
+.proyect--detail--text ul {
+    font-size: var(--font-normal);
+    font-family: var(--prompt);
+}
+
+.proyect--detail--more {
+    background: var(--gray);
 }
