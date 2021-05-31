@@ -8,7 +8,8 @@
     --font-normal: 16px;
     --font-minim: 10px;
     --black: black;
-    --gray: #F5F5F5
+    --gray: #F5F5F5;
+    --p100: 100%;
 }
 
 /* //////////        ICONS COLORS          ////////////// */
@@ -80,7 +81,7 @@ header {
 }
 
 nav {
-    max-width: var(--mobile-W);
+    width: var(--p100);
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -110,7 +111,7 @@ nav .header__menu i{
 
 header .header__img img {
     width: auto;
-    height: 568px;
+    height: var(--mobile-H);
     position: relative;
     right: 230px;
 }
@@ -126,7 +127,7 @@ header .header__txt {
 }
 
 header .header__icons {
-    max-width: var(--mobile-H);
+    width: var(--p100);
     color: var(--white);
     position: absolute;
     display: flex;
@@ -139,7 +140,7 @@ header .h__icon {
 }
 
 header .header__txt h1 {
-    font-size: 24px;
+    font-size: var(--font-mayus);
     font-weight: 900;
     margin: 0 20px 30px 20px ;
 }
@@ -190,7 +191,7 @@ header .header__txt p {
 
 .i--twcss p{
     color: #1ab1ba;
-    font-weight:500;
+    font-weight: 500;
     font-size: 14px;position: relative;
     top: 15px
 }
@@ -270,7 +271,7 @@ header .header__txt p {
 }
 
 .proyect--img img {
-    width: 100%;
+    width: var(--p100);
 }
 
 .proyect--detail--text {
@@ -286,4 +287,68 @@ header .header__txt p {
 
 .proyect--detail--more {
     background: var(--gray);
+}
+
+/* //////////        ABOUT         ////////////// */
+.about {
+    height: 993px;
+}
+
+.about__img {
+    display: flex;
+    width: var(--p100);
+    justify-content: center;;
+    font-size: var(--font-mayus);
+}
+
+.about__img h1{
+    position: absolute;
+}
+
+.about__img {
+    max-width: var(--mobile-W);
+}
+
+.about__img img {
+    width: 100%;
+}
+
+.about__text {
+    background: var(--black);
+    color: white;
+    position: relative;
+    top: -180px;
+    max-width: var(--mobile-W);
+    text-align: center;
+    padding: 15px 15px 30px 15px;
+    box-sizing: border-box;
+}
+
+.about__text h1{
+    font-size: var(--font-mayus);
+}
+
+.about__text p {
+    font-size: var(--font-normal);
+}
+
+footer {
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social--icon {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social--icon a {
+    color: var(--black);
 }
