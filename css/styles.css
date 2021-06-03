@@ -236,7 +236,7 @@ header .header__txt p {
 
 .skills_soft_txt {
     width: 50%;
-    padding: 50px 20px;
+    padding-top: 50px;
     margin-left: 75px;
 }
 
@@ -267,47 +267,33 @@ header .header__txt p {
 
 /* //////////        WORK         ////////////// */
 
-.work__content {
-    max-width: var(--mobile-W);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    box-sizing: border-box;
-}
-.work__content img {
-    width: 100%;
-}
-
-.work__content h1 {
-    color: var(--white);
-    background-color: black;
-    padding: 5px 50px;
-    position: absolute;
-    z-index: 2;
-    margin-bottom: 130px;
-}
-
 .work__txt {
-    max-width: var(--mobile-W);
+    text-align: center;
+    margin-bottom: 90px;
 }
 
-.work__txt ul li {
-    font-size: var(--font-normal);
-    font-family: var(--prompt);
+.work__txt h1 {
+    font-size: var(--font-45);
+    margin: 100px 0 50px 0;
+}
+
+.work__txt p {
+    font-size: var(--font-30);
+    margin: 15px 0;
 }
 
 .work__proyect {
     box-sizing: border-box;
-    max-width: var(--mobile-W);
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40PX;
+    font-size: var(--font-30);
 }
 
 .proyect--title {
     background: var(--black);
-    font-size: var(--font-normal);
 }
+
 
 .proyect--title h3 {
     color: var(--white);
@@ -316,8 +302,12 @@ header .header__txt p {
     margin: 0;
 }
 
+.proyect__content {
+    display: flex;
+}
+
 .proyect--img {
-    max-width: var(--mobile-H);
+    width: 50%;
 }
 
 .proyect--img img {
@@ -327,7 +317,7 @@ header .header__txt p {
 .proyect--detail--text {
     margin: 15px;
     text-align: justify;
-    font-size: var(--font-normal);
+    width: 50%;
 }
 
 .proyect--detail--text ul {
