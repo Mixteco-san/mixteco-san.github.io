@@ -213,7 +213,7 @@ header .header__txt p {
 }
 
 .skill--icon p{
-    font-size: var(--font-24);
+    font-size: var(--font-25);
     margin: 30px 0;
     font-weight: bolder;
 }
@@ -285,14 +285,14 @@ header .header__txt p {
 }
 
 .work__proyects {
-    margin: 40px 0;
+    margin: 100px 0;
 }
 
 .work__proyect {
     text-align: center;
     box-shadow: var(--shadow-desk);
     font-size: var(--font-25);
-    margin-bottom: 65px;
+    margin: 0 65px 65px;
 }
 
 .proyect--title {
@@ -341,22 +341,14 @@ header .header__txt p {
 
 /* //////////        ABOUT         ////////////// */
 .about {
-    height: 993px;
-}
-
-.about__img {
+    /* height: 993px; */
     display: flex;
-    width: var(--p100);
-    justify-content: center;;
-    font-size: var(--font-mayus);
-}
-
-.about__img h1{
-    position: absolute;
+    overflow: hidden;
+    height: 1500px;
 }
 
 .about__img {
-    max-width: var(--mobile-W);
+    width: 50%;
 }
 
 .about__img img {
@@ -366,28 +358,25 @@ header .header__txt p {
 .about__text {
     background: var(--black);
     color: white;
-    position: relative;
-    top: -180px;
-    max-width: var(--mobile-W);
+    width: 50%;
     text-align: center;
-    padding: 15px 15px 30px 15px;
+    padding: 60px;
     box-sizing: border-box;
 }
 
 .about__text h1{
-    font-size: var(--font-mayus);
+    font-size: var(--font-45);
+    margin-top: 100px;
 }
 
 .about__text p {
-    font-size: var(--font-normal);
+    font-size: var(--font-30);
+    margin: 70px 0;
 }
 
-/* //////////        FOOTER         ////////////// */
-
-footer {
-    box-sizing: border-box;
-    padding: 15px;
-    text-align: center;
+.about__text > .social--p {
+    margin: 170px 0 100px 0;
+    font-size: var(--font-35);
 }
 
 .social {
@@ -396,11 +385,22 @@ footer {
 }
 
 .social--icon {
-    font-size: 40px;
+    font-size: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .social--icon a {
-    color: var(--black);
+    color: var(--white);
+}
+
+
+/* //////////        FOOTER         ////////////// */
+
+footer {
+    background: var(--black);
+    color: var(--white);
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
 }
