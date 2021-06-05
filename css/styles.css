@@ -1,6 +1,6 @@
 :root {
     --mobile-H: 568px;
-    --desktop-H: 855px;
+    --desktop-H: 800px;
     --prompt: 'Prompt', sans-serif;
     --open-sans: 'Open Sans Condensed', sans-serif;
     --white: white;
@@ -96,7 +96,7 @@ a {
 /* //////////        HEADER          ////////////// */
 
 header {
-    height: var(--desktop-H);
+    height: 855px;
     width: var(--p100);
     /* display: flex; */
     overflow: hidden;
@@ -111,7 +111,7 @@ nav {
 }
 
 nav .header__logo {
-    margin: 50px;
+    margin: 50px 80px;
     z-index: 2;
 }
 
@@ -176,7 +176,7 @@ header .header__txt {
     color: var(--white);
     top: 485px;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px;;
 }
 
 header .header__txt h1 {
@@ -187,6 +187,7 @@ header .header__txt h1 {
 
 header .header__txt p {
     font-size: var(--font-30);
+    margin: 0 40px;
 }
 
 /* //////////        SKILLS         ////////////// */
@@ -275,12 +276,12 @@ header .header__txt p {
 
 .skills_soft_img {
     width: var(--p50);
-    position: relative;
-    bottom: 330px;
 }
 
 .skills_soft_img img {
     width: var(--p100);
+    position: relative;
+    bottom: 330px;
 }
 
 /* //////////        WORK         ////////////// */
@@ -329,7 +330,8 @@ header .header__txt p {
 
 .proyect--img {
     width: var(--p50);
-    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .proyect--img img {
@@ -422,4 +424,69 @@ footer {
     box-sizing: border-box;
     padding: 15px;
     text-align: center;
+}
+
+/* //////////        MEDIAQUERYS         ////////////// */
+
+@media screen and (max-width: 1580px) {
+    .skills_soft_img img {
+        bottom: 0;
+    }
+
+    .work__proyect {
+        font-size: var(--font-20);
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .skills p {
+        margin: 20px 70px;
+    }
+
+    .work__txt h1 {
+        margin: 70px 0 50px 0;
+    }
+
+    .about__text > .social--p {
+        margin: 100px 0;
+        font-size: var(--font-30);
+    }
+}
+
+@media screen and (max-width: 1345px) {
+    .proyect__content {
+        display: block;
+    }
+
+    .proyect--img {
+        width: var(--p100);
+    }
+
+    .proyect--detail {
+        width: var(--p100);
+        font-size: var(--font-25);
+        padding-bottom: 30px;
+    }
+    
+    .proyect--detail--text p{
+        margin: 30px 50px;
+    }
+
+    .proyect--detail--text ul {
+        margin: 30px 70px;
+    }
+
+    .about__text > .social--p {
+        margin: 70px 0;
+    }
+
+    .social--icon {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 1231px) {
+    .social--icon {
+        font-size: 70px;
+    }
 }
