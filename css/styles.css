@@ -415,6 +415,10 @@ header .header__txt p {
     margin: 20px;
 }
 
+.i--github a > p {
+    margin: 20px 0;
+}
+
 /* //////////        FOOTER         ////////////// */
 
 footer {
@@ -427,8 +431,22 @@ footer {
 
 /* //////////        MEDIAQUERYS         ////////////// */
 
+@media screen and (max-width: 1581px) {
+    .skills_soft_img img {
+        bottom: 0px;
+    }
 
-@media screen and (max-width: 1345px) {
+    .about__text {
+        padding: 0 40px;
+    }
+
+    .about__text p {
+        margin: 30px 0
+    }
+}
+
+@media screen and (max-width: 1383px) {
+    
     .proyect__content {
         display: block;
     }
@@ -450,8 +468,22 @@ footer {
     .proyect--detail--text ul {
         margin: 30px 70px;
     }
+    
+    .about {
+        height: 1350px;
+    }
+
+    .about__text > .social--p {
+        margin: 100px 0 50px 0;
+    }
 }
 
-@media screen and (max-width: 1581;) {
-    
+@media screen and (max-width: 1246px) {
+    .about__text > .social--p {
+        margin: 60px 0 50px 0;
+    }
+
+    .social--icon {
+        font-size: 65px;
+    }
 }
