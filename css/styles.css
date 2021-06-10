@@ -6,6 +6,7 @@
     --white: white;
     --mobile-W: 320px;
     --font-45: 45px;
+    --font-40: 40px;
     --font-35: 35px;
     --font-30: 30px;
     --font-25: 25px;
@@ -200,8 +201,7 @@ header .header__txt p {
 
 .skills h1 {
     font-size: var(--font-45);
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px 0;
 }
 
 .skills p {
@@ -479,11 +479,131 @@ footer {
 }
 
 @media screen and (max-width: 1246px) {
+    .about {
+        height: 1230px;
+    }
+
     .about__text > .social--p {
         margin: 60px 0 50px 0;
+        font-size: var(--font-30);
     }
 
     .social--icon {
         font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 1152px) {
+    .skills_softs {
+        height: 600px;
+    }
+
+    .skills_soft_txt {
+        margin-left: 30px;
+        padding: 0;
+    }
+
+    .skills_soft_txt h3 {
+        margin: 30px 0;
+    }
+    
+    .about__text p {
+        font-size: 28px;
+    }
+    
+    .about__text .social--p {
+        font-size: 28px;
+        margin: 30px 0;
+    }   
+}
+
+@media screen and (max-width: 1135px) {
+    h1, .about__text h1 {
+        font-size: var(--font-40);
+    }
+
+    header .header__txt p, .skills p, .skills_soft_txt h3, .soft__skills--list li, .work__txt p, .about__text .social--p {
+        font-size: var(--font-25);
+    }
+
+    .skills h1 {
+        margin: 40px 0;
+    }
+    
+    .skiils__content {
+        margin-top: 60px;
+    }
+    
+    .skill--icon {
+        font-size: 100px;
+    }
+    
+    .skill--icon p {
+        font-size: var(--font-20);
+    }
+    
+    .i--twcss p {
+        font-size: var(--font-35);
+    }
+
+    .work__txt h1 {
+        margin: 70px 0 40px 0;
+    }
+
+    .about {
+        height: 1125px;
+    }
+
+    .about__text h1 {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .about {
+        height: 1090px;
+    }
+    
+    .about__text {
+        padding: 0 25px;
+    }
+
+    .social--icon {
+        font-size: 50px;
+    }
+
+    .social--icon a > p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1125px)  {
+    .about {
+        flex-wrap: wrap;
+        height: 1590px;
+    }
+    
+    .about__img {
+        width: var(--p100);
+    }
+
+    .about__img img{
+        position: relative;
+        bottom: 150px;
+    }
+
+    .about__text {
+        width: var(--p100);
+        position: relative;
+        bottom: 1450px;
+    }
+
+    .social--icon {
+        font-size: 80px;
+        padding-bottom: 50px;
+    }
+
+    .social--icon a > p {
+        font-size: var(--font-16);
     }
 }
