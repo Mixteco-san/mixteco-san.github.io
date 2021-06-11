@@ -11,6 +11,7 @@
     --font-30: 30px;
     --font-25: 25px;
     --font-20: 20px;
+    --font-18: 18px;
     --font-16: 16px;
     --font-10: 10px;
     --black: black;
@@ -144,8 +145,6 @@ nav .header__menu i{
 
 header .header__img img {
     width: var(--p100);
-    /* position: relative; */
-    right: 230px;
 }
 
 header .header__icons {
@@ -348,7 +347,6 @@ header .header__txt p {
 }
 
 .proyect--detail--text ul {
-    font-size: var(--font-normal);
     font-family: var(--prompt);
 }
 
@@ -470,7 +468,7 @@ footer {
     }
     
     .about {
-        height: 1350px;
+        height: 1280px;
     }
 
     .about__text > .social--p {
@@ -484,7 +482,7 @@ footer {
     }
 
     .about__text > .social--p {
-        margin: 60px 0 50px 0;
+        margin: 30px 0;
         font-size: var(--font-30);
     }
 
@@ -518,8 +516,8 @@ footer {
 }
 
 @media screen and (max-width: 1135px) {
-    h1, .about__text h1 {
-        font-size: var(--font-40);
+    h1 {
+        font-size: var(--font-40) !important;
     }
 
     header .header__txt p, .skills p, .skills_soft_txt h3, .soft__skills--list li, .work__txt p, .about__text .social--p {
@@ -578,9 +576,13 @@ footer {
 }
 
 @media screen and (max-width: 1125px)  {
+    .proyect--detail--text {
+        padding: 0;
+    }
+    
     .about {
         flex-wrap: wrap;
-        height: 1590px;
+        height: 1800px;
     }
     
     .about__img {
@@ -595,15 +597,255 @@ footer {
     .about__text {
         width: var(--p100);
         position: relative;
-        bottom: 1450px;
+        bottom: 1380px;
     }
 
     .social--icon {
         font-size: 80px;
-        padding-bottom: 50px;
+        padding-bottom: 300px;
     }
 
     .social--icon a > p {
         font-size: var(--font-16);
+    }
+}
+
+@media screen and (max-width: 902px) {
+    header {
+        height: 677px;
+    }
+
+    header .header__icons {
+        top: 250px;
+    }
+
+    header .header__txt {
+        top: 425px;
+    }
+
+    .work__txt {
+        margin-bottom: 70px;
+    }
+
+    .work__proyects {
+        margin: 0;
+    }
+
+    .work__proyect {
+        margin: 0 40px 65px 40px;
+    }
+
+    .about__img img {
+        bottom: 95px;
+    }
+    
+    .about__text {
+        bottom: 1000px;
+    }
+
+    .about__text .social--p {
+        margin-top: 95px;
+    }
+
+    .social--icon {
+        padding-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    header {
+        height: 633px;
+    }
+
+    header .header__icons {
+        top: 225px;
+    }
+
+    header .h__icon i {
+        font-size: var(--font-30);
+    }
+
+    .i--twcss p {
+        font-size: var(--font-25);
+    }
+
+    header .header__txt {
+        top:  340px;
+    }
+
+    .skill--icon {
+        font-size: 75px;
+    }
+
+    .skills_softs {
+        height: 450px;
+    }
+
+    .skills_soft_txt {
+        margin-left: 12px;
+    }
+
+    .soft__skills--list li {
+        font-size: var(--font-20);   
+    }
+
+    .proyect--detail--text p {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: var(--font-35) !important;
+    }
+
+    .skiils__content h3, .skills_soft_txt h3, .proyect--title h3 {
+        font-size: var(--font-25);
+    } 
+
+    header .header__txt p, .skills p, .skills_soft_txt h3, .soft__skills--list li, .work__txt p, .about__text p, .about__text .social--p {
+        font-size: var(--font-20);
+    }
+
+    header {
+        height: 579px;
+    }
+
+    nav .header__logo p  {
+        font-size: var(--font-16);
+    }
+
+    header .h__icon p {
+        font-size: var(--font-18);
+    }
+
+    header .header__img img {
+        position: relative;
+        width: 900px;
+    }
+
+    .skill--icon {
+        font-size: 60px;
+    }
+
+    .skill--icon p {
+        font-size: var(--font-18);
+    }
+
+    .i--twcss p{
+        font-size: var(--font-25);
+    }
+
+    .proyect--detail--text {
+        padding: 0 15px;
+    }
+
+    .proyect--detail--text p, .proyect--detail--text ul {
+        font-size: var(--font-20);
+    }
+
+    .about__img img {
+        bottom: 0;
+    }
+
+    .about__text {
+        bottom: 560px;
+    }
+
+    .social--icon a > p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 722px) {
+    header .h__icon i {
+        font-size: var(--font-25);
+    }
+    
+    header .header__img img {
+        right: 165px;
+    }
+
+    .skills_softs {
+        height: 800px;
+        flex-wrap: wrap;
+    }
+
+    .skills_soft_txt {
+        width: var(--p100);
+        padding: 30px 40px;
+    }
+
+    .skills_soft_img {
+        width: var(--p100);
+        overflow: hidden;
+    }
+
+    .skills_soft_img img {
+        bottom: 430px;
+    }
+
+    .about__text  {
+        bottom: 460px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    header {
+        height: var(--mobile-H);
+    }
+    
+    .about__text  {
+        bottom: 250px;
+    }
+
+    .social--icon {
+        font-size: 60px;
+    }
+
+    .skills_soft_img img {
+        bottom: 230px;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    h1 {
+        font-size: var(--font-25) !important;
+    }
+
+    header .header__txt p, .skills p, .skills_soft_txt h3, .soft__skills--list li, .work__txt p, .about__text p, .about__text .social--p {
+        font-size: var(--font-16);
+    }
+
+    .skiils__content h3, .skills_soft_txt h3, .proyect--title h3 {
+        font-size: var(--font-20);
+    } 
+    
+    nav .header__logo {
+        margin: 35px;
+    }
+
+    nav .header__lenguage {
+        margin: 50px 30px;
+    }
+
+    header .header__img img {
+        right: 50px;
+    }
+
+    header .header__icons {
+        top: 215px;
+    }
+
+    header .h__icon i {
+        font-size: var(--font-20);
+    }
+
+    header .h__icon p {
+        font-size: var(--font-16);
+    }
+
+    header .header__txt {
+        top: 310px;
     }
 }
