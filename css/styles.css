@@ -178,7 +178,9 @@ header .header__txt {
     color: var(--white);
     top: 485px;
     box-sizing: border-box;
-    padding: 10px;;
+    padding: 10px;
+
+    
 }
 
 header .header__txt h1 {
@@ -1009,7 +1011,14 @@ footer {
 }
 
 @media screen and (max-width: 321px) {
+    header .header__txt p {
+        margin: 0 20px;
+    }
+    
     .about {
         height: 1180px;
     }
 }
+
+/* ////////////////////////// ANIMATIONS ///////////////////////////////// */
+
