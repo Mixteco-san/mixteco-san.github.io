@@ -179,8 +179,13 @@ header .header__txt {
     top: 485px;
     box-sizing: border-box;
     padding: 10px;
+    /* font-family: var(--open-sans); */
+}
 
-    
+header .wrapper {
+    /* height: 80px; */
+    display: grid;
+    place-items: center;
 }
 
 header .header__txt h1 {
@@ -1010,6 +1015,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 431px) {
+    header .header__txt h1 {
+        font-size: 21px !important;
+    }
+}
+
 @media screen and (max-width: 321px) {
     header .header__txt p {
         margin: 0 20px;
@@ -1022,3 +1033,28 @@ footer {
 
 /* ////////////////////////// ANIMATIONS ///////////////////////////////// */
 
+.typing--animation {
+    width: 29ch;
+    border-right: 3px solid var(--white);
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation-delay: 3s;
+    animation-name: typing, cursor;
+    animation-duration: 1s, 0.3s;
+    animation-timing-function: steps(28), step-end;
+    animation-iteration-count: 1, infinite;
+    animation-direction: alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
