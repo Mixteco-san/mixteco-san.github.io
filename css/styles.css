@@ -1043,9 +1043,9 @@ footer {
 
 #load--element {
     border: 15px solid var(--white);
-    border-top-color: var(--black);
+    border-top-color: rgba(4, 4, 4, 0.95);
     border-top-style: groove;
-    border-bottom-color: var(--black);
+    border-bottom-color: rgba(4, 4, 4, 0.95);
     border-bottom-style: groove;
     width: 100px;
     height: 100px;
