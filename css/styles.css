@@ -1080,7 +1080,7 @@ footer {
 }
 
 .typing--animation.active {
-    animation-delay: .4s;
+    animation-delay: .3s;
     animation-name: typing, cursor;
     animation-duration: 1s, 0.3s;
     animation-timing-function: steps(28), step-end;
