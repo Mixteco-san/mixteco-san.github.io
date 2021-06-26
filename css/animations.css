@@ -1,0 +1,129 @@
+#load__container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(4, 4, 4, 0.95);
+    position: fixed;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+}
+
+#load--element {
+    border: 15px solid var(--white);
+    border-top-color: transparent;
+    border-top-style: groove;
+    border-bottom-color: transparent;
+    border-bottom-style: groove;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    animation-name: loading;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    will-change: transform;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.typing--animation {
+    width: 29ch;
+    border-right: 3px solid var(--white);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing--animation.active {
+    animation-delay: .3s;
+    animation-name: typing, cursor;
+    animation-duration: 1s, 0.3s;
+    animation-timing-function: steps(28), step-end;
+    animation-iteration-count: 1, infinite;
+    animation-direction: alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.icon--animation:hover {
+    animation-name: jump;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(10px);
+    }
+    25% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.bell--animation.active--bell {
+    animation-name: bell;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    transform-origin: center top;
+    animation-timing-function: ease-out;
+}
+
+@keyframes bell {
+    12.5% {
+        transform: rotate(35deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    37.5% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    62.5% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    87.5% {
+        transform: matrix(5deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}

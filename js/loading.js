@@ -1,5 +1,14 @@
-var loadContainer = document.querySelector('#load__container')
-var typingAnimation = document.querySelector('.typing--animation')
+const loadContainer = document.querySelector('#load__container')
+const typingAnimation = document.querySelector('.typing--animation')
+const bellAnimation = document.querySelector('.bell--animation')
+
+const moveBell = () => {
+    bellAnimation.classList.add('active--bell') 
+}
+
+const removeBell = () => {
+    bellAnimation.classList.remove('active--bell')
+}
 
 const preloading = () => {
     loadContainer.style.opacity = '0'
@@ -17,3 +26,6 @@ const preloading = () => {
 }
 
 window.addEventListener('load', preloading)
+
+bellAnimation.addEventListener('mouseover', moveBell )
+bellAnimation.addEventListener('animationend', removeBell)
