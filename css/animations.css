@@ -138,6 +138,44 @@
     }
 }
 
+.about__img.activate {
+    animation-name: moveright;
+    animation-duration: 1.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+@keyframes moveright {
+    from {
+        opacity: 0;
+        left: -200px;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.about__text.activate {
+    animation-name: moveleft;
+    animation-duration: 1.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+@keyframes moveleft {
+    from {
+        opacity: 0;
+        right: -200px;
+    }
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+
 /*  Animacion de campana
 
 .bell--animation.active--bell {
