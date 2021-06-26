@@ -1,3 +1,5 @@
+/* --------- PREALOADIN ----------- */
+
 #load__container {
     width: 100vw;
     height: 100vh;
@@ -39,6 +41,8 @@
         transform: rotate(360deg);
     }
 }
+
+/* --------- TYPING ----------- */
 
 .typing--animation {
     width: 29ch;
@@ -90,6 +94,47 @@
 
     100% {
         transform: translateY(0px);
+    }
+}
+
+/* --------- Move content ----------- */
+
+.skills_soft_txt.activate {
+    animation-name: moveup;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+@keyframes moveup {
+    from {
+        opacity: 0;
+        top: -200px;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.skills_soft_img.activate {
+    animation-name: movedown;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+
+@keyframes movedown {
+    from {
+        opacity: 0;
+        bottom: -200px;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
     }
 }
 
