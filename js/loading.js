@@ -1,15 +1,17 @@
 const loadContainer = document.querySelector('#load__container')
 const typingAnimation = document.querySelector('.typing--animation')
-const bellAnimation = document.querySelector('.bell--animation')
 
-const moveBell = () => {
-    bellAnimation.classList.add('active--bell') 
-}
+//var bellAnimation = document.querySelector('.bell--animation')
 
-const removeBell = () => {
-    bellAnimation.classList.remove('active--bell')
-}
+// const moveBell = () => {
+//     bellAnimation.classList.add('active--bell') 
+// }
 
+// const removeBell = () => {
+//     bellAnimation.classList.remove('active--bell')
+// }
+
+// Preoloading y activacion de typing
 const preloading = () => {
     loadContainer.style.opacity = '0'
     loadContainer.style.visibility = '0'
@@ -27,5 +29,5 @@ const preloading = () => {
 
 window.addEventListener('load', preloading)
 
-bellAnimation.addEventListener('mouseover', moveBell )
-bellAnimation.addEventListener('animationend', removeBell)
+// bellAnimation.addEventListener('mouseover', moveBell )
+// bellAnimation.addEventListener('animationend', removeBell)

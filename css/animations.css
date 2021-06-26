@@ -93,6 +93,8 @@
     }
 }
 
+/*  Animacion de campana
+
 .bell--animation.active--bell {
     animation-name: bell;
     animation-duration: 2s;
@@ -126,4 +128,4 @@
     100% {
         transform: rotate(0);
     }
-}
+} */
