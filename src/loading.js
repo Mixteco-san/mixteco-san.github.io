@@ -47,13 +47,11 @@ const canShow = () => {
 }
 
 const moveYRemove = () => {
-    console.log('Termino la animacion de Skills')
     skillSoftTxt.classList.remove('activate')
     skillSoftImg.classList.remove('activate')
 }
 
 const moveXRemove = () => {
-    console.log('Termino la animacion de About')
     aboutImg.classList.remove('activate')
     aboutTxt.classList.remove('activate')
 
@@ -81,16 +79,3 @@ window.addEventListener('load', preloading)
 // Apagar movimientos de containers
 skillSoftImg.addEventListener('animationend', moveYRemove)
 aboutTxt.addEventListener('animationend', moveXRemove)
-
-//var bellAnimation = document.querySelector('.bell--animation')
-
-// const moveBell = () => {
-//     bellAnimation.classList.add('active--bell') 
-// }
-
-// const removeBell = () => {
-//     bellAnimation.classList.remove('active--bell')
-// }
-
-// bellAnimation.addEventListener('mouseover', moveBell )
-// bellAnimation.addEventListener('animationend', removeBell)
