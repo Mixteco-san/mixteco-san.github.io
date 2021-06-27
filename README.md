@@ -13,6 +13,6 @@ Este sitio web fue creado sin ayuda de frameworks, unicamente se uso:
 
 Te dejo mis redes para que me puedas seguir o contactar.
 
-[Twitter](https://twitter.com/mixteco_san "Twitter") 
-[Linkedin](www.linkedin.com/in/javier-silva-avendaño "Linkedin")
-mixtecosan.works@gmail.com
+- [Twitter](https://twitter.com/mixteco_san "Twitter") 
+- [Linkedin](www.linkedin.com/in/javier-silva-avendaño "Linkedin")
+- mixtecosan.works@gmail.com
