@@ -101,7 +101,6 @@ a {
 header {
     height: 855px;
     width: var(--p100);
-    /* display: flex; */
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -368,15 +367,19 @@ header .header__txt p {
 .about {
     display: flex;
     overflow: hidden;
-    height: 1500px;
+    background-color: black;
 }
 
 .about__img {
     width: 50%;
+    overflow: hidden;    
+    height: 2050px;
 }
 
 .about__img img {
-    width: var(--p100);
+    width: 180%;
+    position: relative;
+    left: -35%;
 }
 
 .about__text {
@@ -385,12 +388,10 @@ header .header__txt p {
     width: 50%;
     text-align: center;
     padding: 60px;
-    box-sizing: border-box;
 }
 
 .about__text h1{
     font-size: var(--font-45);
-    margin-top: 100px;
 }
 
 .about__text p {
@@ -398,19 +399,51 @@ header .header__txt p {
     margin: 70px 0;
 }
 
-.about__text > .social--p {
-    margin: 170px 0 100px 0;
-    font-size: var(--font-35);
+.about__text--formulary {
+    width: 100%;
+    font-size: var(--font-30);
+    font-family: var(--prompt);
+    text-align: left;
 }
 
-.social {
+input, textarea {
+    width: 100%;
+    border: 1px solid rgba(211, 211, 211, 0.8);
+    background: rgba(85, 85, 85, 0.5);
+    color: var(--white);
+    font-size: var(--font-30);
+    padding: 5px 20px;
+    margin-bottom: 50px;
+}
+
+input, textarea {
+    box-sizing: border-box;
+}
+
+input {
+    height: 60px;
+}
+
+.btn {
+    width: 300px;
+    height: 85px;
+    margin-bottom: 100px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: bolder;
+    font-size: var(--font-40);
+    background: rgba(211, 211, 211, 0.4);
+}
+
+.about__text--social {
     display: flex;
     justify-content: space-around;
+    margin: 50px 0;
 }
 
 .social--icon {
-    font-size: 100px;
-    margin-top: 20px;
+    font-size: 60px;
 }
 
 .social--icon a {
@@ -442,18 +475,9 @@ footer {
     .skills_soft_img img {
         bottom: 0px;
     }
-
-    .about__text {
-        padding: 0 40px;
-    }
-
-    .about__text p {
-        margin: 30px 0
-    }
 }
 
 @media screen and (max-width: 1383px) {
-    
     .proyect__content {
         display: block;
     }
@@ -474,29 +498,6 @@ footer {
 
     .proyect--detail--text ul {
         margin: 30px 70px;
-    }
-    
-    .about {
-        height: 1280px;
-    }
-
-    .about__text > .social--p {
-        margin: 100px 0 50px 0;
-    }
-}
-
-@media screen and (max-width: 1246px) {
-    .about {
-        height: 1230px;
-    }
-
-    .about__text > .social--p {
-        margin: 30px 0;
-        font-size: var(--font-30);
-    }
-
-    .social--icon {
-        font-size: 65px;
     }
 }
 
