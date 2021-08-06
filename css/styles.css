@@ -368,18 +368,18 @@ header .header__txt p {
     display: flex;
     overflow: hidden;
     background-color: black;
+    height: 1800px;
 }
 
 .about__img {
     width: 50%;
     overflow: hidden;    
-    height: 2050px;
+    display: flex;
+    justify-content: center;
 }
 
 .about__img img {
-    width: 180%;
-    position: relative;
-    left: -35%;
+    height: 100%;
 }
 
 .about__text {
@@ -425,48 +425,50 @@ input {
 }
 
 .btn {
-    width: 300px;
-    height: 85px;
-    margin-bottom: 100px;
+    width: 280px;
+    height: 75px;
     border: 1px solid var(--white);
     border-radius: 10px;
     color: var(--white);
     font-weight: bolder;
-    font-size: var(--font-40);
+    font-size: var(--font-35);
     background: rgba(211, 211, 211, 0.4);
-}
-
-.about__text--social {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 0;
-}
-
-.social--icon {
-    font-size: 60px;
-}
-
-.social--icon a {
-    color: var(--white);
-}
-
-.social--icon a > p {
-    font-size: var(--font-16);
-    margin: 20px;
-}
-
-.i--github a > p {
-    margin: 20px 0;
 }
 
 /* //////////        FOOTER         ////////////// */
 
 footer {
-    background: var(--black);
+    background: rgb(0, 0, 0, .815);
     color: var(--white);
-    box-sizing: border-box;
     padding: 15px;
+}
+
+.social__container {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social--icon a {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.social--icon a > i {
+    font-size: 80px;
+}
+
+.social--icon a > p {
+    font-size: var(--font-35);
+    margin-left: 50px;
+}
+
+.credits__container {
     text-align: center;
+    margin: 30px 0;
+    font-size: var(--font-25);
 }
 
 /* //////////        MEDIAQUERYS         ////////////// */
@@ -474,6 +476,10 @@ footer {
 @media screen and (max-width: 1581px) {
     .skills_soft_img img {
         bottom: 0px;
+    }
+
+    .about__text p {
+        margin: 50px 0;
     }
 }
 
@@ -499,6 +505,16 @@ footer {
     .proyect--detail--text ul {
         margin: 30px 70px;
     }
+
+    textarea {
+        height: 300px;
+    }
+
+    .btn { 
+        height: 60px;
+        width: 224px;
+        font-size: var(--font-30);
+    }
 }
 
 @media screen and (max-width: 1152px) {
@@ -515,7 +531,11 @@ footer {
         margin: 30px 0;
     }
     
-    .about__text p {
+    .about__text {
+        padding: 50px;
+    }
+
+    .about__text p, input, textarea {
         font-size: 28px;
     }
     
@@ -530,7 +550,7 @@ footer {
         font-size: var(--font-40) !important;
     }
 
-    header .header__txt p, .skills p, .skills_soft_txt h3, .soft__skills--list li, .work__txt p, .about__text .social--p {
+    header .header__txt p, .skills p, .skills_soft_txt h3, .soft__skills--list li, .work__txt p, .about__text .social--p, label, input, textarea {
         font-size: var(--font-25);
     }
 
@@ -559,29 +579,15 @@ footer {
     }
 
     .about {
-        height: 1125px;
+        height: 1500px;
     }
 
-    .about__text h1 {
-        margin-top: 60px;
-    }
-}
-
-@media screen and (max-width: 1135px) {
-    .about {
-        height: 1090px;
-    }
-    
     .about__text {
         padding: 0 25px;
     }
 
-    .social--icon {
-        font-size: 50px;
-    }
-
-    .social--icon a > p {
-        font-size: 14px;
+    .about__text p, label, input, textarea {
+        font-size: var(--font-25);
     }
 }
 
@@ -592,31 +598,63 @@ footer {
     
     .about {
         flex-wrap: wrap;
-        height: 1800px;
+        height: 2500px;
     }
     
     .about__img {
+        display: block;
         width: var(--p100);
     }
 
     .about__img img{
         position: relative;
         bottom: 150px;
+        width: var(--p100);
+        height: auto;
     }
 
     .about__text {
         width: var(--p100);
         position: relative;
         bottom: 1380px;
+        padding: 35px;
     }
 
-    .social--icon {
-        font-size: 80px;
-        padding-bottom: 300px;
+    .social--icon a p {
+        font-size: var(--font-30);
+        margin-left: 25px;
     }
 
-    .social--icon a > p {
-        font-size: var(--font-16);
+    .btn {
+        
+    }
+
+    textarea {
+        height: initial;
+    }
+
+    .btn__formulary--container {
+        text-align: center;
+    }
+
+    .btn {
+        height: 85px;
+        width: 317.34px;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .about {
+        height: 2335px;
+    }
+
+    .social__container {
+        height: 150px;
+    }
+
+    .social--icon a p {
+        font-size: var(--font-25);
     }
 }
 
@@ -645,6 +683,10 @@ footer {
         margin: 0 40px 65px 40px;
     }
 
+    .about {
+        height: 2400px;
+    }
+
     .about__img img {
         bottom: 95px;
     }
@@ -653,12 +695,8 @@ footer {
         bottom: 1000px;
     }
 
-    .about__text .social--p {
-        margin-top: 95px;
-    }
-
-    .social--icon {
-        padding-bottom: 200px;
+    .social--icon a i {
+        font-size: 60px;
     }
 }
 
@@ -713,7 +751,7 @@ footer {
         font-size: var(--font-25);
     } 
 
-    header .header__txt p, .skills p, .skills_soft_txt h3, .soft__skills--list li, .work__txt p, .about__text p, .about__text .social--p {
+    header .header__txt p, .skills p, .skills_soft_txt h3, .soft__skills--list li, .work__txt p, .about__text p, label, input, textarea {
         font-size: var(--font-20);
     }
 
@@ -754,12 +792,20 @@ footer {
         font-size: var(--font-20);
     }
 
+    .about {
+        height: 2500px;
+    }
+
     .about__img img {
         bottom: 0;
     }
 
     .about__text {
         bottom: 560px;
+    }
+
+    input {
+        height: 50px;
     }
 
     .social--icon a > p {
@@ -797,6 +843,11 @@ footer {
 
     .about__text  {
         bottom: 460px;
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: var(--font-25);
     }
 }
 
@@ -806,7 +857,7 @@ footer {
     }
     
     .about__text  {
-        bottom: 250px;
+        bottom: 300px;
     }
 
     .social--icon {
@@ -816,6 +867,14 @@ footer {
     .skills_soft_img img {
         bottom: 230px;
     }
+
+    .about {
+        height: 2350px;
+    }
+
+    input, textarea {
+        margin-bottom: 28px;
+    }
 }
 
 @media screen and (max-width: 518px) {
@@ -823,7 +882,7 @@ footer {
         font-size: var(--font-25) !important;
     }
 
-    header .header__txt p, .skills p, .skills_soft_txt h3, .soft__skills--list li, .work__txt p, .about__text p, .about__text .social--p, .proyect--detail--text p, .proyect--detail--text ul  {
+    header .header__txt p, .skills p, .skills_soft_txt h3, .soft__skills--list li, .work__txt p, .about__text p, .about__text .social--p, .proyect--detail--text p, .proyect--detail--text ul {
         font-size: var(--font-16);
     }
 
@@ -877,7 +936,21 @@ footer {
     }
 
     .about {
-        height: 1510px;
+        height: 2100px;
+    }
+
+    input {
+        height: 45px;
+    }
+
+    textarea {
+        height: 240px;
+    }
+
+    .btn {
+        height: 60px;
+        width: 224px;
+        font-size: var(--font-20);
     }
 }
 
@@ -954,7 +1027,7 @@ footer {
     }
 
     .about {
-        height: 1410px;
+        height: 2000px;
     }
 
     .about__text .social--p {
@@ -962,7 +1035,8 @@ footer {
     }
 
     .go_up {
-        right: 30px;
+        right: 45px;
+        bottom: 40px;
         width: 90px;
         height: 90px;
         font-size: 55px;
@@ -972,6 +1046,10 @@ footer {
 @media screen and (max-width: 431px) {
     header .h__icon p, .skill--icon p, .proyect--detail--text p, .proyect--detail--text ul {
         font-size: var(--font-10);
+    }
+
+    header .header__txt h1 {
+        font-size: 21px !important;
     }
 
     .skill--icon {
@@ -991,34 +1069,24 @@ footer {
         margin: 10px;
     }
 
-    .about {
-        height: 1325px;
-    }
-
     .about__text {
         padding: 0 15px;
     }
 
-    .about__text .social--p {
+    .about__text {
         margin-top: 65px;
     }
 
-    .social--icon {
-        font-size: 50px;
+    .social--icon a i {
+        font-size: 40px;
     }
 
     .go_up {
         right: 25px;
-        bottom: 30px;
+        bottom: 50px;
         width: 70px;
         height: 70px;
         font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 431px) {
-    header .header__txt h1 {
-        font-size: 21px !important;
     }
 }
 
@@ -1028,6 +1096,6 @@ footer {
     }
     
     .about {
-        height: 1180px;
+        height: 1780px;
     }
 }
