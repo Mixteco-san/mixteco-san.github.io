@@ -13,7 +13,9 @@
     --font-20: 20px;
     --font-18: 18px;
     --font-16: 16px;
+    --font-15: 15px;
     --font-14: 14px;
+    --font-12: 12px;
     --font-10: 10px;
     --black: black;
     --gray: #F5F5F5;
@@ -69,10 +71,15 @@ body {
 
 h1 {
     font-family: var(--open-sans);
+    font-size: var(--font-35);
 }
 
 p, h3 {
     font-family: var(--prompt);
+}
+
+p {
+    font-family: var(--font-20);
 }
 
 a {
@@ -122,10 +129,9 @@ nav .header__logo p {
     font-weight: bold;
     margin: 0;
     color: var(--white);
-    font-size: 20px;
 }
 
-nav .header__lenguage {
+/* nav .header__lenguage {
     margin: 50px;
     z-index: 2;
     display: none;
@@ -137,7 +143,7 @@ nav .header__lenguage span {
     border: 2px solid var(--white);
     padding: 10px 15px;
     font-size: var(--font-20);
-}
+} */
 
 nav .header__menu i{
     color: var(--white);
@@ -163,11 +169,11 @@ header .h__icon {
 }
 
 header .h__icon i {
-    font-size: var(--font-35);
+    font-size: var(--font-25);
 }
 
 header .h__icon p {
-    font-size: var(--font-20);
+    font-size: var(--font-15);
 }
 
 header .header__txt {
@@ -188,13 +194,12 @@ header .wrapper {
 }
 
 header .header__txt h1 {
-    font-size: var(--font-45);
     font-weight: 900;
     margin: 0 20px 30px 20px ;
 }
 
 header .header__txt p {
-    font-size: var(--font-30);
+    font-size: var(--font-20);
     margin: 0 40px;
 }
 
@@ -875,6 +880,10 @@ footer {
     input, textarea {
         margin-bottom: 28px;
     }
+
+    .credits__container {
+        font-size: var(--font-18);
+    }
 }
 
 @media screen and (max-width: 518px) {
@@ -1087,6 +1096,10 @@ footer {
         width: 70px;
         height: 70px;
         font-size: 40px;
+    }
+
+    .credits__container {
+        font-size: var(--font-14);
     }
 }
 

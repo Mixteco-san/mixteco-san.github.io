@@ -1,3 +1,7 @@
+import {handleSubmit} from "./formulary.js"
+
+const formulary = document.querySelector('#form')
+
 const loadContainer = document.querySelector('#load__container')
 const typingAnimation = document.querySelector('.typing--animation')
 
@@ -79,3 +83,5 @@ window.addEventListener('load', preloading)
 // Apagar movimientos de containers
 skillSoftImg.addEventListener('animationend', moveYRemove)
 aboutTxt.addEventListener('animationend', moveXRemove)
+// Escuchamos al formulario
+formulary.addEventListener('submit', handleSubmit)
