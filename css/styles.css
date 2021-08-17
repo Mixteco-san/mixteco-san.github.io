@@ -1,7 +1,8 @@
 :root {
     --mobile-H: 568px;
-    --desktop-H: 800px;
+    --desktop-H: 570px;
     --prompt: 'Prompt', sans-serif;
+    --tailwind-font: 'Mulish', sans-serif;
     --open-sans: 'Open Sans Condensed', sans-serif;
     --white: white;
     --mobile-W: 320px;
@@ -74,12 +75,16 @@ h1 {
     font-size: var(--font-35);
 }
 
-p, h3 {
+p, h3, label {
     font-family: var(--prompt);
 }
 
-p {
-    font-family: var(--font-20);
+h3 {
+    font-size: var(--font-25);
+}
+
+p, li, label {
+    font-size: var(--font-20);
 }
 
 a {
@@ -163,7 +168,6 @@ header .header__icons {
     justify-content: space-around;
 }
 
-
 header .h__icon {
     text-align: center;
 }
@@ -212,21 +216,15 @@ header .header__txt p {
 }
 
 .skills h1 {
-    font-size: var(--font-45);
     margin: 60px 0;
 }
 
 .skills p {
-    font-size: var(--font-30);
-    margin: 25px 20px;
+    margin: 25px 60px;
 }
 
 .skiils__content {
     margin-top: 90px;
-}
-
-.skiils__content h3 {
-    font-size: var(--font-30);
 }
 
 .skills__icons {
@@ -238,19 +236,19 @@ header .header__txt p {
 
 .skill--icon {
     margin: 8px 15px;
-    font-size: 130px;
+    font-size: 80px;
 }
 
 .skill--icon p{
-    font-size: var(--font-25);
     margin: 30px 0;
     font-weight: bolder;
 }
 
 .i--twcss p{
     color: #1ab1ba;
-    font-weight: 500;
-    font-size: var(--font-45);
+    font-weight: 600;
+    font-size: var(--font-40);
+    font-family: var(--tailwind-font);
     position: relative;
     top: 15px
 }
@@ -272,7 +270,6 @@ header .header__txt p {
 }
 
 .skills_soft_txt h3 {
-    font-size: var(--font-30);
     font-weight: bolder;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -283,7 +280,6 @@ header .header__txt p {
 }
 .soft__skills--list li {
     font-family: var(--prompt);
-    font-size: var(--font-30);
 }
 
 .skills_soft_img {
@@ -293,7 +289,6 @@ header .header__txt p {
 .skills_soft_img img {
     width: var(--p100);
     position: relative;
-    bottom: 330px;
 }
 
 /* //////////        WORK         ////////////// */
@@ -304,12 +299,10 @@ header .header__txt p {
 }
 
 .work__txt h1 {
-    font-size: var(--font-45);
     margin: 100px 0 50px 0;
 }
 
 .work__txt p {
-    font-size: var(--font-30);
     margin: 40px 90px;
 }
 
@@ -320,8 +313,7 @@ header .header__txt p {
 .work__proyect {
     text-align: center;
     box-shadow: var(--shadow-desk);
-    font-size: var(--font-25);
-    margin: 0 65px 65px;
+    margin: 0 65px;
 }
 
 .proyect--title {
@@ -336,22 +328,17 @@ header .header__txt p {
     margin: 0;
 }
 
-.proyect__content {
-    display: flex;
-}
-
 .proyect--img {
-    width: var(--p50);
     display: flex;
     align-items: center;
 }
 
 .proyect--img img {
-    width: 100%;
+    width: var(--p100);
 }
 
 .proyect--detail {
-    width: var(--p50);
+    margin: 50px 0;
 }
 
 .proyect--detail--text {
@@ -364,8 +351,9 @@ header .header__txt p {
 }
 
 .proyect--detail--more {
-    display: none;
+    visibility: hidden;
     background: var(--gray);
+    height: 50px;
 }
 
 /* //////////        ABOUT         ////////////// */
@@ -373,7 +361,7 @@ header .header__txt p {
     display: flex;
     overflow: hidden;
     background-color: black;
-    height: 1800px;
+    height: 1310px;
 }
 
 .about__img {
@@ -395,20 +383,14 @@ header .header__txt p {
     padding: 60px;
 }
 
-.about__text h1{
-    font-size: var(--font-45);
-}
-
 .about__text p {
-    font-size: var(--font-30);
     margin: 70px 0;
 }
 
 .about__text--formulary {
     width: 100%;
-    font-size: var(--font-30);
-    font-family: var(--prompt);
     text-align: left;
+    margin-top: 80px;
 }
 
 input, textarea {
@@ -416,9 +398,9 @@ input, textarea {
     border: 1px solid rgba(211, 211, 211, 0.8);
     background: rgba(85, 85, 85, 0.5);
     color: var(--white);
-    font-size: var(--font-30);
-    padding: 5px 20px;
-    margin-bottom: 50px;
+    font-size: var(--font-20);
+    padding: 3px 10px;
+    margin-bottom: 30px;
 }
 
 input, textarea {
@@ -426,18 +408,19 @@ input, textarea {
 }
 
 input {
-    height: 60px;
+    height: 40px;
 }
 
 .btn {
-    width: 280px;
-    height: 75px;
+    width: 170px;
+    height: 55px;
     border: 1px solid var(--white);
     border-radius: 10px;
     color: var(--white);
     font-weight: bolder;
-    font-size: var(--font-35);
+    font-size: var(--font-20);
     background: rgba(211, 211, 211, 0.4);
+    margin-top: 20px;
 }
 
 /* //////////        FOOTER         ////////////// */
@@ -462,65 +445,20 @@ footer {
 }
 
 .social--icon a > i {
-    font-size: 80px;
+    font-size: 50px;
 }
 
 .social--icon a > p {
-    font-size: var(--font-35);
     margin-left: 50px;
 }
 
 .credits__container {
     text-align: center;
     margin: 30px 0;
-    font-size: var(--font-25);
 }
 
 /* //////////        MEDIAQUERYS         ////////////// */
 
-@media screen and (max-width: 1581px) {
-    .skills_soft_img img {
-        bottom: 0px;
-    }
-
-    .about__text p {
-        margin: 50px 0;
-    }
-}
-
-@media screen and (max-width: 1383px) {
-    .proyect__content {
-        display: block;
-    }
-
-    .proyect--img {
-        width: var(--p100);
-    }
-
-    .proyect--detail {
-        width: var(--p100);
-        font-size: var(--font-25);
-        padding-bottom: 30px;
-    }
-    
-    .proyect--detail--text p{
-        margin: 30px 50px;
-    }
-
-    .proyect--detail--text ul {
-        margin: 30px 70px;
-    }
-
-    textarea {
-        height: 300px;
-    }
-
-    .btn { 
-        height: 60px;
-        width: 224px;
-        font-size: var(--font-30);
-    }
-}
 
 @media screen and (max-width: 1152px) {
     .skills_softs {
