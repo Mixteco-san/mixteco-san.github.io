@@ -1,4 +1,5 @@
 import {handleSubmit} from "./formulary.js"
+import './components/proyects-desk.js'
 
 const formulary = document.querySelector('#form')
 

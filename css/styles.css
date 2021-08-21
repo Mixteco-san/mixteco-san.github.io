@@ -250,6 +250,10 @@ header .header__txt p {
 .work__txt p {
     margin: 40px 90px;
 }
+.work__proyects-container{
+    display: flex;
+    flex-wrap: wrap;
+}
 .work__proyects {
     margin: 100px 0;
 }
