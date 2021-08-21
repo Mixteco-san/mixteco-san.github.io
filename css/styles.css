@@ -614,6 +614,11 @@ footer {
     .credits__container {
         font-size: var(--font-10);
     }
+    .go_up{
+        width: 85px;
+        height: 85px;
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 570px) {
@@ -738,11 +743,7 @@ footer {
         height: 1530px;
     }
     .go_up {
-        right: 45px;
         bottom: 35px;
-        width: 90px;
-        height: 90px;
-        font-size: 55px;
     }
 }
 
@@ -777,7 +778,6 @@ footer {
     }
     .go_up {
         right: 25px;
-        bottom: 50px;
         width: 70px;
         height: 70px;
         font-size: 40px;
