@@ -102,6 +102,7 @@ header {
     width: var(--p100);
     overflow: hidden;
     box-sizing: border-box;
+    box-shadow: var(--shadow-desk);
 }
 nav {
     width: var(--p100);
@@ -206,13 +207,16 @@ header .header__txt p {
     top: 15px
 }
 .skills_softs {
+    width: 90%;
+    height: var(--desktop-H);
     background: var(--black);
     color: white;
     box-sizing: border-box;
     display: flex;
-    margin-top: 65PX;
-    height: var(--desktop-H);
+    margin: 65px auto 0 auto;
     overflow: hidden;
+    box-shadow: var(--shadow-desk);
+    border-radius: 20px;
 }
 .skills_soft_txt {
     width: var(--p50);
@@ -362,21 +366,19 @@ footer {
     padding: 15px;
 }
 .social__container {
-    height: 200px;
+    height: 170px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+.social--icon{
+    margin: 0 35px;
 }
 .social--icon a {
     color: var(--white);
-    display: flex;
-    align-items: center;
 }
 .social--icon a > i {
     font-size: 50px;
-}
-.social--icon a > p {
-    margin-left: 50px;
 }
 .credits__container {
     text-align: center;
@@ -467,6 +469,9 @@ footer {
     header .header__txt {
         top: 425px;
     }
+    .skills_soft_txt {
+        margin: 15px auto;
+    }
     .work__txt {
         margin-bottom: 70px;
     }
@@ -499,9 +504,6 @@ footer {
     }
     .skill--icon {
         font-size: 60px;
-    }
-    .skills_soft_txt {
-        margin-left: 12px;
     }
     .work__txt p {
         margin: 40px 42px;
@@ -549,9 +551,6 @@ footer {
     .about {
         height: 1800px;
     }
-    .social--icon a > p {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 722px) {
@@ -565,7 +564,7 @@ footer {
         margin: 60px 0;
     }
     .skills_softs {
-        height: 800px;
+        height: 750px;
         flex-wrap: wrap;
     }
     .skills_soft_txt, .skills_soft_img {
@@ -573,7 +572,7 @@ footer {
         height: var(--p50);
     }
     .skills_soft_txt {
-        padding: 10px 40px;
+        padding: 0 40px;
         box-sizing: border-box;
     }
     .skills_soft_img {
@@ -663,12 +662,8 @@ footer {
     .skills_softs {
         height: 500px;
     }
-    .skills_soft_txt {
-        margin: 0;
-    }
     .skills_soft_txt h3 {
-        margin: 10px 0;
-        padding: 0 auto;
+        margin: 18px 0;
     }
     .skills_soft_img img {
         bottom: 315px;
@@ -724,9 +719,6 @@ footer {
     .i--twcss p{
         font-size: var(--font-18);
     }
-    .skills_soft_txt {
-        padding: 15px;
-    }
     .work__txt {
         margin-bottom: 50px;
     }
@@ -757,6 +749,12 @@ footer {
 @media screen and (max-width: 431px) {
     .skill--icon {
         margin: 0;
+    }
+    .skills_softs {
+        margin: 0;
+        margin: 0;
+        width: var(--p100);
+        border-radius: 0;
     }
     .skills_soft_img img {
         bottom: 150px;
@@ -795,6 +793,9 @@ footer {
     }
     .skill--icon {
         font-size: var(--font-30);
+    }
+    .social--icon {
+        margin: 0 28px;
     }
     .i--twcss p {
         font-size: var(--font-16);
