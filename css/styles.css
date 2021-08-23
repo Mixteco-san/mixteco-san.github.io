@@ -65,13 +65,13 @@ h1 {
     font-family: var(--open-sans);
     font-size: var(--font-35);
 }
-p, h3, label {
+p, h3, label, ul, li, textarea, legend {
     font-family: var(--prompt);
 }
 h3 {
     font-size: var(--font-25);
 }
-p, li, label {
+p, ul, li, label, textarea, legend {
     font-size: var(--font-20);
 }
 a {
@@ -305,7 +305,7 @@ header .header__txt p {
     display: flex;
     overflow: hidden;
     background-color: black;
-    height: 1310px;
+    height: 1400px;
 }
 .about__img {
     width: 50%;
@@ -326,10 +326,12 @@ header .header__txt p {
 .about__text p {
     margin: 70px 0;
 }
-.about__text--formulary {
+.about__text-formulary {
     width: 100%;
-    text-align: left;
     margin-top: 80px;
+}
+legend {
+    margin-bottom: 30px;
 }
 input, textarea {
     width: 100%;
@@ -404,23 +406,14 @@ footer {
     .i--twcss p {
         font-size: var(--font-35);
     }
-    .about {
-        height: 1270px;
+    .proyect--detail--text {
+        padding: 25px;
     }
     .about__text {
         padding: 0 35px;
     }
-}
-
-@media screen and (max-width: 1125px)  {
-    .proyect--detail--text {
-        padding: 25px;
-    }
     .social--icon a p {
         margin-left: 25px;
-    }
-    .btn__formulary--container {
-        text-align: center;
     }
 }
 
@@ -482,7 +475,7 @@ footer {
         margin: 0 40px 65px 40px;
     }
     .about {
-        height: 2120px;
+        height: 2200px;
     }
 }
 
@@ -509,18 +502,18 @@ footer {
         margin: 40px 42px;
     }
     .about {
-        height: 2080px;
+        height: 2140px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
     h1 {
         font-size: var(--font-25);
     }
     h3, .btn {
         font-size: var(--font-18);
     } 
-    p, label, input, textarea, li {
+    p, label, input, textarea, ul, li, legend {
         font-size: var(--font-16);
     }
     header {
@@ -549,7 +542,7 @@ footer {
         padding: 0 15px;
     }
     .about {
-        height: 1800px;
+        height: 1965px;
     }
 }
 
@@ -584,6 +577,9 @@ footer {
     .work__txt p {
         margin: 35px 40px;
     }
+    .about {
+        height: 1870px;
+    }
     .about__text  {
         padding: 20px;
     }
@@ -597,7 +593,7 @@ footer {
         bottom: 260px;
     }
     .about {
-        height: 1640px;
+        height: 1730px;
     }
     .about__text {
         top: -47%;
@@ -623,7 +619,7 @@ footer {
 
 @media screen and (max-width: 570px) {
     .about {
-        height: 1700px;
+        height: 1800px;
     }
     .about__img img {
         top: 0;
@@ -640,7 +636,7 @@ footer {
     h3, .btn {
         font-size: var(--font-16);
     }
-    p, ul, li, label, input, textarea {
+    p, ul, li, label, input, textarea, legend {
         font-size: var(--font-12);
     } 
     header .h__icon p {
@@ -686,7 +682,7 @@ footer {
         margin: 20px 0;
     }
     .about {
-        height: 1580px;
+        height: 1610px;
     }
     input {
         height: 35px;
@@ -740,7 +736,7 @@ footer {
         margin: 15px;
     }
     .about {
-        height: 1530px;
+        height: 1580px;
     }
     .go_up {
         bottom: 35px;
@@ -767,7 +763,7 @@ footer {
         margin: 10px;
     }
     .about {
-        height: 1490px;
+        height: 1550px;
     }
     .about__text {
         padding: 0 15px;
@@ -786,7 +782,7 @@ footer {
 
 @media screen and (max-width: 370px) {
     .about {
-        height: 1470px;
+        height: 1510px;
     }
     .about__text {
         top: -25%;
@@ -805,8 +801,5 @@ footer {
 @media screen and (max-width: 321px) {
     header .header__txt p {
         margin: 0 20px;
-    }
-    .about {
-        height: 1400px;
     }
 }
