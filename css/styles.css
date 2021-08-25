@@ -330,6 +330,9 @@ header .header__txt p {
     width: 100%;
     margin-top: 80px;
 }
+form [required]:valid{
+    border: thin solid lightgreen;
+}
 legend {
     margin-bottom: 30px;
 }
@@ -344,6 +347,9 @@ input, textarea {
 }
 input, textarea {
     box-sizing: border-box;
+}
+textarea{
+    resize: none;
 }
 input {
     height: 40px;

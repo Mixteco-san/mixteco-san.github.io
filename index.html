@@ -297,26 +297,40 @@
                         <b>Contacto:</b>
                     </legend>
                     <input name="name" 
-                        required type="text" 
+                        required 
+                        type="text" 
                         id="name" 
-                        placeholder="Nombre:">
+                        placeholder="Nombre:"
+                        title="Este campo solo acepta letras y espacios"
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
                     <input name="email" 
-                        required type="text" 
+                        required 
+                        type="text" 
                         id="email" 
-                        placeholder="Email:">
+                        placeholder="Email:"
+                        title="Correo no valido"
+                        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
                     <input name="Subject" 
-                        required type="text" 
+                        required 
+                        type="text" 
                         id="subject" 
-                        placeholder="Asunto:">
+                        placeholder="Asunto:"
+                        title="Es necesario ingresar un asunto">
                     <textarea name="message" 
                         id="message-area" 
                         cols="30" 
                         rows="10" 
-                        placeholder="¡Hola! Deja tu mensaje c:"></textarea>
+                        placeholder="¡Hola! Deja tu mensaje c:"
+                        required
+                        data-pattern="^.{1,255}$"
+                        title="El mensaje no puede exceder 255 caracteres"></textarea>
                     <div class="btn__formulary--container">
                         <button class="btn" type="submit">
                             Enviar
                         </button>
+                    </div>
+                    <div class="formulary__resonse" style="display: none;">
+                        <p>Mensaje enviado ;)</p>
                     </div>
                 </form>
             </div>
@@ -351,6 +365,6 @@
         </div>
     </footer>
 
-    <script type="module" src="src/main.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>

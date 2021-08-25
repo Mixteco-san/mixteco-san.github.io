@@ -12,9 +12,9 @@
 #load--element {
     border: 15px solid white;
     border-top-color: transparent;
-    border-top-style: groove;
     border-bottom-color: transparent;
-    border-bottom-style: groove;
+    /* border-top-style: groove; */
+    /* border-bottom-style: groove; */
     width: 100px;
     height: 100px;
     border-radius: 100%;
