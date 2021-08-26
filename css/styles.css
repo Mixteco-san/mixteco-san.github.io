@@ -330,11 +330,8 @@ header .header__txt p {
     width: 100%;
     margin-top: 80px;
 }
-form [required]:valid{
+.formulary [required]:valid{
     border: thin solid lightgreen;
-}
-legend {
-    margin-bottom: 30px;
 }
 input, textarea {
     width: 100%;
@@ -343,7 +340,7 @@ input, textarea {
     color: var(--white);
     font-size: var(--font-20);
     padding: 3px 10px;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 input, textarea {
     box-sizing: border-box;
@@ -353,6 +350,9 @@ textarea{
 }
 input {
     height: 40px;
+}
+.error-input{
+    color: red;
 }
 .btn {
     width: 170px;
@@ -364,6 +364,10 @@ input {
     font-size: var(--font-20);
     background: rgba(211, 211, 211, 0.4);
     margin-top: 20px;
+}
+
+.none{
+    display: none;
 }
 
 /* //////////        FOOTER         ////////////// */
@@ -611,7 +615,7 @@ footer {
         margin: 40px 0;
     }
     input, textarea {
-        margin-bottom: 30px;
+        margin-top: 30px;
     }
     .credits__container {
         font-size: var(--font-10);
