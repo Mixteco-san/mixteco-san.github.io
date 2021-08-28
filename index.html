@@ -121,10 +121,10 @@
                     <P>JavaScript</P>
                 </div>
     
-                <div class="skill--icon i--py bubble-pop">
+                <!-- <div class="skill--icon i--py bubble-pop">
                     <i class="fab fa-python"></i>
                     <p>Python</p>
-                </div>
+                </div> -->
             </div>
 
             <h3>
@@ -137,9 +137,14 @@
                     <p>Bootsrap</p>
                 </div>
     
-                <div class="skill--icon i--vue bubble-pop">
+                <!-- <div class="skill--icon i--vue bubble-pop">
                     <i class="fab fa-vuejs"></i>
                     <P>Vue.js</P>
+                </div> -->
+
+                <div class="skill--icon i--react bubble-pop">
+                    <i class="fab fa-react"></i>
+                    <P>React.js</P>
                 </div>
     
                 <div class="skill--icon i--twcss bubble-pop">
@@ -157,39 +162,76 @@
                     <p>Node.js</p>
                 </div>
     
-                <div class="skill--icon i--dkr bubble-pop">
+                <!-- <div class="skill--icon i--dkr bubble-pop">
                     <i class="fab fa-docker"></i>
                     <P>Docker</P>
-                </div>
+                </div> -->
     
                 <div class="skill--icon i--git bubble-pop">
                     <i class="fab fa-git-alt"></i>
                     <P>Git</P>
                 </div>
             </div>
+        </div>
 
-            <div class="skills_softs">
-                <div class="skills_soft_txt">
-                    <h3>
-                        Habilidades blandas
-                    </h3>
-    
-                    <ul class="soft__skills--list">
-                        <li>Comunicación.</li>
-                        <li>Gestión efectiva del tiempo.</li>
-                        <li>Productividad.</li>
-                        <li>Gestión de conflictos.</li>
-                        <li>Disposición hacia el aprendizaje.</>
-                        <li>Adaptación.</li>
-                        <li>Trabajo en equipo.</li>
-                        <li>Empatía.</li>
-                        <li>Toma de decisiones</li>
-                    </ul>
-                </div>
+        <div class="others__skills">
+            <div class="others__skills-gruop">
+                <span>
+                    <b>Otros:</b>
+                </span>
+                <ul>
+                    <li>
+                        API Rest
+                    </li>
+                    <li>
+                        Diseño
+                    </li>
+                    <li>
+                        IU/UX
+                    </li>
+                    <li>
+                        WebComponents
+                    </li>
+                    <li>
+                        Python
+                    </li>
+                    <li>
+                        Docker
+                    </li>
+                    <li>
+                        Vue 2
+                    </li>
+                    <li>
+                        Postman
+                    </li>
+                    <li>
+                        Figma
+                    </li> 
+                </ul>
+            </div>
+        </div>
 
-                <div class="skills_soft_img">
-                    <img src="https://drive.google.com/uc?id=1DUaHtoUp8FM3KRgKZgcj8cFL_a0Jg3dM" alt="">
-                </div>
+        <div class="skills_softs">
+            <div class="skills_soft_txt">
+                <h3>
+                    Habilidades blandas
+                </h3>
+
+                <ul class="soft__skills--list">
+                    <li>Comunicación.</li>
+                    <li>Gestión efectiva del tiempo.</li>
+                    <li>Productividad.</li>
+                    <li>Gestión de conflictos.</li>
+                    <li>Disposición hacia el aprendizaje.</>
+                    <li>Adaptación.</li>
+                    <li>Trabajo en equipo.</li>
+                    <li>Empatía.</li>
+                    <li>Toma de decisiones</li>
+                </ul>
+            </div>
+
+            <div class="skills_soft_img">
+                <img src="https://drive.google.com/uc?id=1DUaHtoUp8FM3KRgKZgcj8cFL_a0Jg3dM" alt="">
             </div>
         </div>
     </section>
@@ -292,7 +334,10 @@
             </p>
 
             <div class="about__text-formulary">
-                <form action="" class="formulary">
+                <form class="formulary" 
+                    action="https://formsubmit.co/mixtecosan.works@gmail.com"
+                    method="POST"
+                    target="_blank">
                     <legend>
                         <b>Contacto:</b>
                     </legend>
@@ -308,7 +353,7 @@
                         placeholder="Email:"
                         title="Formato de correo no valido"
                         pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
-                    <input name="Subject" 
+                    <input name="subject" 
                         required 
                         type="text"  
                         placeholder="Asunto:"
@@ -319,11 +364,14 @@
                         placeholder="¡Hola! Deja tu mensaje c:"
                         required
                         data-pattern="^.{1,255}$"
-                        title="El mensaje no puede exceder 255 caracteres"></textarea>
+                        title="El mensaje no puede estar vacio o exceder 255 caracteres"></textarea>
                     <div class="btn__formulary--container">
                         <button class="btn" type="submit">
                             Enviar
                         </button>
+                        <div class="loader__submit none">
+                            <div class="loader__submit--point"></div>
+                        </div>
                     </div>
                     <div class="formulary__resonse" style="display: none;">
                         <p>Mensaje enviado ;)</p>

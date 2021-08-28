@@ -3,9 +3,7 @@ const d = document
 export const contactFormValidation = () => {
     const $form = d.querySelector('.formulary')
     const $inputs = d.querySelectorAll('.formulary [required]')
-
-    console.log($inputs)
-
+    // console.log($inputs)
     $inputs.forEach( input => {
         const $span = d.createElement('span')
         $span.id = input.name
@@ -35,5 +33,22 @@ export const contactFormValidation = () => {
                     : $span.classList.add('none')
             }
         }
+    })
+
+    d.addEventListener('submit', e => {
+        let $btn = d.querySelector('.btn')
+        let $loaderSubmit = d.querySelector('.loader__submit')
+
+        // e.preventDefault()
+        $btn.classList.add('none')
+        $loaderSubmit.classList.remove('none')
+
+        setTimeout(() => {
+            $btn.classList.remove('none')
+            $loaderSubmit.classList.add('none')
+            $form.reset()
+
+            alert('Mensaje enviado (:')
+        }, 3000)
     })
 }

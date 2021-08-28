@@ -1,6 +1,6 @@
 import { offLoader } from './src/modules/loader.js'
 import { removeMovement } from './src/modules/remove_motion_animation.js'
-import { contactFormValidation } from './src/formulary.js'
+import { contactFormValidation } from './src/formulary_validation.js'
 
 import './src/components/proyects-desk.js'
 
@@ -15,7 +15,7 @@ window.addEventListener('load', e =>{
 })
 
 d.addEventListener('DOMContentLoaded', e => {
-    console.log('El DOM esta listo')
+    // console.log('El DOM esta listo')
     removeMovement('.skills_soft_img', '.skills_soft_txt', '.about__img', '.about__text')
     contactFormValidation()
 })

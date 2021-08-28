@@ -210,3 +210,61 @@
 .grow:hover {
     transform: scale(1.2);
 }
+
+/* --------- Load submit ----------- */
+
+.loader__submit--point, .loader__submit--point::before, .loader__submit--point::after{
+    width: 13px;
+    height: 13px;
+    animation-name: loader-submit;
+    animation-duration: .75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.loader__submit--point::before, .loader__submit--point::after{
+    content: '';
+    position: absolute;
+    top: 0;
+}
+.loader__submit--point{
+    color: white;
+    position: relative;
+    animation-delay: -.16s;
+}
+.loader__submit--point::before{
+    left: -2.8em;
+    animation-delay: -.32s;
+}
+.loader__submit--point::after{
+    left: 2.8em;
+}
+
+@keyframes loader-submit {
+    0%,
+    80%,
+    100%{
+        box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40%{
+        box-shadow: 0 2.5em 0 0;
+    }
+}
+
+/* --------- Lettering tour ----------- */
+
+.others__skills-gruop{
+    animation-name: lettering-tour;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    will-change: transform;
+}
+
+@keyframes lettering-tour {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
