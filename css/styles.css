@@ -210,7 +210,7 @@ header .header__txt p {
     top: 15px
 }
 .others__skills{
-    width: 100%;
+    width: var(--p100);
     margin: 50px auto 80px auto;
 }
 .others__skills-gruop{
