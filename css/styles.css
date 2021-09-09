@@ -193,8 +193,8 @@ header .header__txt p {
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.skill--icon {
-    margin: 8px 15px;
+.skill--icon{
+    margin: 10px 0;
     font-size: 80px;
 }
 .skill--icon p{
