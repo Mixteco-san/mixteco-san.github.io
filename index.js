@@ -2,7 +2,8 @@ import { offLoader } from './src/modules/loader.js'
 import { removeMovement } from './src/modules/remove_motion_animation.js'
 import { contactFormValidation } from './src/formulary_validation.js'
 
-import './src/components/proyects-desk.js'
+// import './src/components/proyects-desk.js'
+import './src/components/proyect-mosaic.js'
 
 const d = document
 
