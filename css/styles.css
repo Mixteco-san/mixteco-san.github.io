@@ -281,51 +281,9 @@ header .header__txt p {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
-    padding: 80px 20px;
-    margin-bottom: 100px;
-    background: var(--gray);
-}
-.work__proyects {
-    margin: 100px 0;
-}
-.work__proyect {
-    text-align: center;
-    box-shadow: var(--shadow-desk);
-    margin: 0 65px;
-}
-.proyect--title {
-    background: var(--black);
-}
-.proyect--title h3 {
-    color: var(--white);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0;
-}
-.proyect--img {
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
-.proyect--img img {
-    width: var(--p100);
-}
-
-.proyect--detail {
-    margin: 50px 0;
-}
-.proyect--detail--text {
-    text-align: justify;
-    padding: 0 40px 0 20px;
-}
-.proyect--detail--text ul {
-    font-family: var(--prompt);
-}
-.proyect--detail--more {
-    visibility: hidden;
-    background: var(--gray);
-    height: 50px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
 }
 
 /* //////////        ABOUT         ////////////// */

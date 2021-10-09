@@ -4,7 +4,7 @@ class ProyectMosaic extends HTMLElement{
         this.attachShadow({ mode: 'open' })
     }
     static get observedAttributes() {
-        return['titleproyect', 'description', 'img', 'imgalt', 'tools']
+        return['titleproyect', 'description', 'img', 'imgalt', 'url', 'tools']
     }
     attributeChangedCallback(attr, oldVal, newVal) {
         if( attr === 'titleproyect') {
@@ -19,6 +19,9 @@ class ProyectMosaic extends HTMLElement{
         if( attr === 'imgalt') {
             this.imgalt = newVal
         }
+        if( attr === 'url') {
+            this.url = newVal
+        }
         if( attr === 'tools') {
             this.tools = newVal
         }
@@ -28,13 +31,15 @@ class ProyectMosaic extends HTMLElement{
         template.innerHTML = `
             <div class="proyect"> 
                 <div class="proyect__img">
-                    <img src=${this.img} alt=${this.imgalt} />
+                    <a href=${this.url} target="_blank">
+                        <img src=${this.img} alt=${this.imgalt} />
+                    </a>
                 </div>
                 <div class="proyect__txt-wrapper">
                     <h1>
                         ${this.titleproyect}
                     </h1>
-                    <p>
+                    <p class="proyect__txt--description">
                         ${this.description}
                     </p>
                     <p>
@@ -54,15 +59,18 @@ class ProyectMosaic extends HTMLElement{
                     margin: 0;
                     padding: 0;
                     font-family: var(--prompt);
-                    box-shadow: var(--shadow-desk);
                 }
                 .proyect{
+                    margin: 0 50px 70px 50px;
                     width: 500px;
-                    background: var(--white);
                     text-align: center;
+                    box-shadow: var(--shadow-desk);
                 }
                 .proyect__txt-wrapper{
                     padding: 20px;
+                }
+                .proyect__txt--description{
+                    margin: 30px 0;
                 }
                 .proyect__img{
                     width: 500px;
@@ -74,6 +82,46 @@ class ProyectMosaic extends HTMLElement{
                 }
                 .proyect__img img{
                     width: 100%;
+                }
+
+                @media screen and (max-width: 780px) {
+                    .proyect__txt-wrapper h1{
+                        font-size: var(--font-25);
+                    }
+                    .proyect__txt-wrapper p{
+                        font-size: var(--font-16);
+                    }
+                }
+                @media screen and (max-width: 624px) {
+                    .proyect{
+                        margin: 0 auto 70px auto;
+                    }
+                }
+                @media screen and (max-width: 570px) {
+                    .proyect{
+                        width: 400px;
+                    }
+                    .proyect__img{
+                        width: 400px;
+                        height: 224px;
+                    }
+                }
+                @media screen and (max-width: 518px) {
+                    .proyect__txt-wrapper h1{
+                        font-size: var(--font-20);
+                    }
+                    .proyect__txt-wrapper p{
+                        font-size: var(--font-12);
+                    }
+                }
+                @media screen and (max-width: 431px) {
+                    .proyect{
+                        width: 300px;
+                    }
+                    .proyect__img{
+                        width: 300px;
+                        height: 168px;
+                    }
                 }
             </style>
         `
