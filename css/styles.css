@@ -407,7 +407,10 @@ footer {
     }  
 }
 
-@media screen and (max-width: 1135px) {    
+@media screen and (max-width: 1135px) {  
+    header {
+        height: auto;
+    }  
     .i--twcss p {
         font-size: var(--font-35);
     }
@@ -458,9 +461,6 @@ footer {
 }
 
 @media screen and (max-width: 902px) {
-    header {
-        height: 677px;
-    }
     header .header__icons {
         top: 250px;
     }
@@ -485,9 +485,6 @@ footer {
 }
 
 @media screen and (max-width: 840px) {
-    header {
-        height: 633px;
-    }
     header .header__icons {
         top: 225px;
     }
